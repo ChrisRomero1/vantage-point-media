@@ -44,7 +44,7 @@ export interface GalleryConfig {
 export const siteConfig: SiteConfig = {
   language: "en",
   brandName: "Vantage Point",
-  copyright: "© 2025 Vantage Point Media",
+  copyright: "© 2026 Vantage Point Media",
 };
 
 export const navigationConfig: NavigationConfig = {
@@ -54,11 +54,11 @@ export const navigationConfig: NavigationConfig = {
 export const infoPageConfig: InfoPageConfig = {
   backLinkLabel: "Close",
   eyebrow: "DRONE VIDEOGRAPHY & PHOTOGRAPHY",
-  title: "Aerial storytelling from above the Tennessee River to the ridges of Lookout Mountain.",
+  title: "Aerial video and photography from the Tennessee River to Lookout Mountain.",
   paragraphs: [
-    "Vantage Point Media is a Chattanooga-based aerial imaging studio specializing in cinematic drone videography and photography. Fully FAA Part 107 certified and insured, I work with realtors, event planners, tourism boards, and brands who need striking aerial perspectives that ground-level cameras simply cannot capture.",
-    "Every flight is planned with precision — from pre-shoot location scouting and weather analysis to intelligent flight modes that produce smooth, professional footage. Whether it is a real estate listing that needs to stand out, a wedding that deserves a bird's-eye view, or a marketing campaign that requires dramatic Tennessee scenery, the approach is always tailored to the story.",
-    "Based between the Tennessee River and the Appalachian foothills, the natural landscape here provides an incredible canvas — golden hour light over the ridges, the river's winding path through downtown, the changing seasons across the valley. These are the backdrops that make aerial work in Chattanooga genuinely special.",
+    "Vantage Point Media is a drone photo and video studio in Chattanooga. I'm FAA Part 107 certified and insured, and I shoot for realtors, event planners, tourism boards, and brands that want angles a ground camera can't get.",
+    "Every flight is planned before I show up. I scout the location, check the weather window, and build a shot list around what the footage is for. A real estate listing gets shot differently than a wedding, and both get shot differently than a tourism campaign.",
+    "The scenery here helps. Golden hour over the ridges looks good from 300 feet. So does the river running through downtown. I don't have to travel far to find a backdrop.",
   ],
   contactLabel: "GET IN TOUCH",
   contactEntries: [
