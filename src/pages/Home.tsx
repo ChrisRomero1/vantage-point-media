@@ -250,27 +250,27 @@ export default function Home() {
               <PackageRow
                 name="HOVER"
                 subtitle="Entry-Level Aerial Stills"
-                description="8–12 edited aerial photos. One 15–30 second highlight clip. 20–40 minutes of flight time. Perfect for basic real estate listings, small properties, and social media content."
-                price="From $150"
+                description="8–12 high-res edited aerial photos plus one 15–30 second highlight clip. 20–40 minute flight covering high overview, front elevation reveal, top-down, oblique corners, and feature close-ups. Best for basic real estate listings, small properties, and social media content."
+                price="$150 – $250"
               />
               <PackageRow
                 name="SOAR"
                 subtitle="Photos + Cinematic Video"
                 badge="Most Popular"
-                description="15–25 edited aerial photos. 1–2 minute cinematic video with music and transitions. Social media cuts in vertical format. 45–60 minutes of flight time. Ideal for standard real estate listings, home sales, and small events."
-                price="From $350"
+                description="15–25 edited aerial photos, a 1–2 minute cinematic video with music and transitions, and vertical 9:16 social media cuts. 45–60 minute flight includes orbit, top-down, dynamic moves, and golden hour context shots. Ideal for real estate listings, home sales, and business promos."
+                price="$300 – $500"
               />
               <PackageRow
                 name="SUMMIT"
                 subtitle="Premium Video + Extended Coverage"
-                description="25–40+ edited photos. 2–5 minute polished video with professional color grading. Optional voiceover. Timelapse and 360-degree options. 60–90+ minutes across multiple locations. For luxury homes, large estates, weddings, and tourism campaigns."
-                price="From $650"
+                description="25–40+ edited photos and a 2–5 minute polished video with professional color grading, optional voiceover, and multiple cuts. Timelapse, 360° options, and before/after edits available. 60–90+ minutes across multiple locations — built for luxury homes, large estates, weddings, and tourism campaigns."
+                price="$600 – $1,000+"
               />
               <PackageRow
                 name="CUSTOM / PEAK"
                 subtitle="Multi-Property & Campaign Work"
-                description="Fully customized flight plans for multi-property shoots, full marketing campaigns, events, or combined ground + aerial coverage. Live streaming, extended editing, multi-day shoots, and recurring content packages available."
-                price="Custom Quote"
+                description="Everything in SUMMIT plus live streaming, extended editing, multi-day shoots, interior/exterior bundles, and recurring content packages. Hourly rates available for construction progress, events, or scenic tourism work."
+                price="$1,000+ or $200–$400/hr"
                 last
               />
             </div>
