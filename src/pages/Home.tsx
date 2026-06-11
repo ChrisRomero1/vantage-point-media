@@ -99,27 +99,28 @@ export default function Home() {
             pointerEvents: "none",
           }}
         >
-          {siteConfig.brandName && (
-            <div
+          <div
+            style={{
+              position: "absolute",
+              top: "16px",
+              left: "24px",
+              pointerEvents: "auto",
+              transition: "opacity 0.3s ease",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.7")}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+          >
+            <img
+              src="/images/logo-black.jpg"
+              alt={siteConfig.brandName}
               style={{
-                position: "absolute",
-                top: "24px",
-                left: "32px",
-                fontFamily: "'DM Serif Display', 'Times New Roman', serif",
-                fontSize: "18px",
-                fontWeight: 400,
-                color: "#1a1a1a",
-                letterSpacing: "0.05em",
-                pointerEvents: "auto",
-                cursor: "default",
-                transition: "opacity 0.3s ease",
+                height: "52px",
+                width: "auto",
+                display: "block",
+                mixBlendMode: "multiply",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.6")}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-            >
-              {siteConfig.brandName}
-            </div>
-          )}
+            />
+          </div>
 
           {navigationConfig.infoLinkLabel && (
             <a
