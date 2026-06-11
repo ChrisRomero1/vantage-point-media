@@ -8,6 +8,7 @@ import {
   infoPageConfig,
 } from "@/config";
 import ImageDetailOverlay from "@/components/ImageDetailOverlay";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -18,6 +19,7 @@ export default function Home() {
   const images = galleryConfig.images;
   const hasImages = images.length > 0;
   const cfg = infoPageConfig;
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (!canvasRef.current || !hasImages) return;
@@ -102,8 +104,8 @@ export default function Home() {
           <div
             style={{
               position: "absolute",
-              top: "16px",
-              left: "24px",
+              top: "14px",
+              left: isMobile ? "16px" : "24px",
               pointerEvents: "auto",
               transition: "opacity 0.3s ease",
             }}
@@ -114,7 +116,7 @@ export default function Home() {
               src="/images/logo-black.jpg"
               alt={siteConfig.brandName}
               style={{
-                height: "52px",
+                height: isMobile ? "40px" : "52px",
                 width: "auto",
                 display: "block",
                 mixBlendMode: "multiply",
@@ -128,10 +130,10 @@ export default function Home() {
               onClick={scrollToInfo}
               style={{
                 position: "absolute",
-                top: "24px",
-                right: "32px",
+                top: "22px",
+                right: isMobile ? "16px" : "32px",
                 fontFamily: "system-ui, -apple-system, sans-serif",
-                fontSize: "14px",
+                fontSize: isMobile ? "13px" : "14px",
                 fontWeight: 400,
                 color: "#1a1a1a",
                 textDecoration: "none",
@@ -180,11 +182,11 @@ export default function Home() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "minmax(0, 1.35fr) minmax(0, 1fr)",
-            gap: "64px",
+            gridTemplateColumns: isMobile ? "1fr" : "minmax(0, 1.35fr) minmax(0, 1fr)",
+            gap: isMobile ? "48px" : "64px",
             maxWidth: "1720px",
             margin: "0 auto",
-            padding: "120px 48px 80px",
+            padding: isMobile ? "64px 24px 60px" : "120px 48px 80px",
             boxSizing: "border-box",
             alignItems: "start",
             fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
@@ -279,7 +281,7 @@ export default function Home() {
 
           {/* RIGHT — Contact + CTA */}
           {(cfg.contactLabel || cfg.contactEntries.length > 0 || siteConfig.copyright) && (
-            <div style={{ paddingTop: "80px" }}>
+            <div style={{ paddingTop: isMobile ? "0" : "80px" }}>
               {cfg.contactLabel && (
                 <p
                   style={{
